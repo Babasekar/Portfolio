@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baba Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" />
+</head>
+<body>
+
+    <!--nav bar-->
+    <nav class="navbar">
+        <h1>PORTFOLIO</h1>
+        <div class="nav-links">
+            <ul class="navlink"><a href="#about">About</a></ul>
+            <ul class="navlink"><a href="#education">Education</a></ul>
+            <ul class="navlink"><a href="#skills">Skills</a></ul>
+            <ul class="navlink"><a href="#certificate">Certification</a></ul>
+            <ul class="navlink"><a href="#project">Project</a></ul>
+            <ul class="navlink"><a href="#contact">Contact</a></ul>
+        </div>
+        <div class="linktoggle" onclick="showmenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!--side nav bar-->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closemenu()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side-nav-links">
+            <ul class="side-navlink"><a href="#about" onclick="closemenu()">About</a></ul>
+            <ul class="side-navlink"><a href="#education" onclick="closemenu()">Education</a></ul>
+            <ul class="side-navlink"><a href="#skills" onclick="closemenu()">Skills</a></ul>
+            <ul class="side-navlink"><a href="#certificate" onclick="closemenu()">Certification</a></ul>
+            <ul class="side-navlink"><a href="#project" onclick="closemenu()">Project</a></ul>
+            <ul class="side-navlink"><a href="#contact" onclick="closemenu()">Contact</a></ul>
+        </div>
+    </div>
+
+    <!--header-->
+    <div class="header" id="about">
+        <div class="image">
+            <img src="baba img.jpeg" class="img">
+        </div>
+        <div class="objective">
+            <h1 class="name">BABA <span>SEKAR</span></h1>
+            <h2 class="obj">OBJECTIVE</h2>
+            <p class="obj">To Secure a Challenging Position in a reputable organization to expand my learnings, knowledge, and skills. Seeking a good position to begin my career in a professional environment to make use of my interpersonal skills to achieve goals of a company.</p>
+            
+        </div>
+    </div>
+    <div class = "about">
+        <h1 class="about1">ABOUT</h1>
+            <div class="aboutin">
+            <p>I am a recent B.Tech graduate in Computer and Communication Engineering from Sri Manakula Vinayagar Engineering College. I have a strong foundation in various programming languages and tools, including Python, Java, Excel, PowerBI, HTML, CSS, JavaScript, and statistics. My academic background has equipped me with the necessary skills to excel in technical job role.During my college, I completed a significant project on fake news detection using machine learning with CNN and LSTM algorithms. This project not only honed my technical skills but also deepened my understanding of machine learning and data analysis. Additionally, I have published a journal in the Gravida Review Journal titled "TruthNet with CNN," which showcases my research and analytical capabilities.I have a strong passion for mathematics and statistics which lead me to score 96% in hsc mathematics and in college scored 10/10 in m1,m2,and statistics. I am enthusiastic about leveraging my technical skills and analytical mindset to contribute effectively to a company. I am confident that my background and skills make me a strong candidate for technical, development and data analytics roles.</p>
+            </div>
+        </div>
+    <!--education-->
+    <div class="edu-full" id="education">
+        <h1 class="edu-top">EDUCATION</h1>
+        <div class="edu-container">
+            <div class="edu">
+                <h3 class="h">COLLEGE</h3>
+                <p>B.Tech (Computer and Communication Engineering)</p>
+                <p>Sri Manakula Vinayagar Engineering College</p>
+                <h4>CGPA: 8.29</h4>
+                <p>Madagadipet, Puducherry</p>
+            </div>
+
+            <div class="edu">
+                <h3 class="h">HSC</h3>
+                <p>Nirmala Matric Hr. Sec School</p>
+                <h4>Percentage: 80.83%</h4>
+                <p>Chidambaram-608001</p>
+            </div>
+
+            <div class="edu">
+                <h3 class="h">SSLC</h3>
+                <p>Nirmala Matric Hr. Sec School</p>
+                <h4>Percentage: 80.83%</h4>
+                <p>Chidambaram-608001</p>
+            </div>
+        </div>
+    </div>
+
+    <!--skills-->
+    <div class="skills" id="skills">
+        <h1>SKILLS</h1>
+        <h3>Programming Skills</h3>
+        <div class="prog-skills">
+            <img src="python.png">
+            <img src="java.png">
+            <img src="html.jpg">
+            <img src="CSS-Logo.png">
+            <img src="js.jpg">
+            <img src="React.jpg">
+            <img src="data structures.png">
+            <img src="mysql.png">
+        </div>
+        <h3>Application Skills</h3>
+       
+            
+        <div class="prog-skills">
+                <img src="powerbi.png">
+                <img src="excel.jpg">
+                <img src="figma.png">
+                <img src="illustrator.png">
+                <img src="photoshop.png">
+        </div>
+        
+    </div>
+
+    <!--certification-->
+    <div class="certificate" id="certificate">
+        <h1>CERTIFICATE</h1>
+        <div class="certificate-wrap">
+            <div class="inside-c1">
+                <ul>
+                    <a href="https://courses.edx.org/certificates/1de75e26d70f40fca432954d2dc79ff1"><li>IBM certification in Python basics for data science</li></a>
+                    <a href="https://courses.edx.org/certificates/519f509a95e54d6aaab3ea0cfb1233cb"><li>IBM certification in Introduction to data science</li></a>
+                    <a href="https://www.credly.com/badges/2495526c-d80a-491d-baa3-49b6a1ac7309/linked_in_profile"><li>ML certification from AWS</li></a>
+                    <a href="https://www.linkedin.com/in/baba-sekar-159068262/details/certifications/"><li>Programming in Java in NPTEL</li></a>
+                    <a href="https://courses.edx.org/certificates/320d092cc1904e17a8b11193fcd49081"><li>IBM certification in Web Development</li></a>
+                    <a href="https://www.linkedin.com/in/baba-sekar-159068262/details/certifications/"><li>Database certification from Certiport</li></a>
+                    <a href="https://learn.microsoft.com/en-us/users/babas-0566/credentials/8de287b3cf980c54?ref=https%3A%2F%2Fwww.linkedin.com%2F"><li>Microsoft Azure Fundamentals (AZ-900)</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--project and internship-->
+    <div class="project" id="project">
+        <h1>PROJECT AND INTERNSHIP</h1>
+        <div class="pro-content">
+            <ul>
+                <li>Creditcard Cashback Calculator - to find the exact amount of cashback for each spends <a href="https://babasekar.github.io/creditcard-Cashback-count/">(Project link).</a></li>
+                <li>Truthnet with CNN - Fake news Detection using machine learning with CNN and LSTM algorithm - <a href="https://drive.google.com/file/d/16NouWxEB5Z596KvTFJbvpU8mEhNj9Vtb/view"> paper publication in GRJ journal</a></li>
+                <li>Web Development - Web development project to showcase my portfolio.</li>
+                <li>Internship - AICTE AI-ML Virtual Internship</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--contact-->
+    <section class="contact" id="contact">
+        <h1>CONTACT</h1>
+        <div class="contact-wrap">
+            <li>Phone: +91-9385465091</li>
+            <li>E-mail: babasekar.in@gmail.com</li>
+            <li>LinkedIn: <a href="https://linkedin.com/in/baba-sekar-159068262">linkedin.com/in/baba-sekar-159068262</a></li>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

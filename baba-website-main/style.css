@@ -1,0 +1,410 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    transition: all 0.2s linear;
+}
+html {
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    background-image: url(bc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins", system-ui;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: rgba(11, 11, 11, 0.35) 0px 5px 15px;
+}
+.nav-links{
+    display: flex;
+    padding-left: 20px;
+    column-gap: 20px;
+
+}
+.nav-links a{
+    height: 20px;
+    width: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(127, 129, 129);
+    text-decoration: none;
+    color: rgb(5, 6, 6);
+    border-radius: 20px;
+    
+
+}
+.nav-links a:hover {
+    
+    background-color: rgb(63, 62, 62);
+    color: rgb(165, 161, 161);
+    
+
+}
+.linktoggle{
+    display:none;
+}
+@media screen and (max-width:800px){
+    .linktoggle{
+        display:block;
+    }
+    .nav-links{
+        display: none;
+    }
+}
+/*side nav*/
+.side-navbar{
+    height: 90%;
+    width: 40%;
+    background-color: rgb(59, 59, 61);
+    position: fixed;
+    padding: 10px;
+    color: rgb(152, 149, 149);
+    top:0px;
+    left: -45%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 1s;
+    z-index: 1;
+    
+}
+.side-navlink{
+    margin-bottom: 30px;
+}
+.side-nav-links a{
+    color: white;
+    text-decoration: none;
+}
+.side-nav-links a:hover{
+    color: grey;
+    
+    text-decoration:underline;
+}
+/*header*/
+
+.header {
+    display: grid;
+    grid-template-columns: 250px 1fr; /* Image on the left, content on the right */
+    align-items: center; /* Vertically center the content */
+    gap: 20px; /* Add space between the image and text */
+    margin: 20px; /* Add margin around the header */
+}
+
+.img {
+    width: 100%;
+    height: 20%;
+    border-radius: 70%; /* Make the image circular */
+}
+
+.objective {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically within the grid */
+}
+
+.name {
+    font-size: 2em;
+    margin: 0;
+}
+.name span{
+    color: rgb(94, 93, 93);
+}
+.obj h2{
+    margin-top: 10px;
+    font-size: 1.5em;
+    
+}
+.obj1 p{
+    font-size: 1em;
+}
+
+/*about*/
+.about h1{
+    padding-top: 3%;
+    padding-left: 5%;
+}
+.aboutin p{
+    padding-left: 5%;
+}
+/* Education*/
+
+.edu-full {
+    margin-top: 30px;
+}
+
+.edu-top {
+    padding-left: 5%;
+    padding-top: 50px;
+    
+}
+
+.edu-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Adds space between each edu block */
+    padding: 50px;
+    margin-left: 1%;
+    
+}
+
+.edu {
+    width: 350px;
+    height: 150px;
+    padding: 20px;
+    outline: .1rem solid rgb(135, 132, 132);
+    outline-offset: -0.6rem;
+    background-color: rgb(109, 111, 113);
+    text-align: center  ;
+     /* Optional: Adds a subtle shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: .9em;
+}
+.edu h3,p,h4{
+    background-color: none;
+    box-shadow: none;
+}
+.edu-container  :hover{
+    background-color: rgb(81, 81, 81);
+}
+.h{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 0px;
+    margin-bottom: 10px;
+   
+    
+}
+
+/*skills*/
+.skills h1,h3{
+    padding-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.prog-skills, .app-img {
+    display: flex;
+    gap: 20px;
+    justify-content: left; /* Centers the images horizontally */
+     /* Allows wrapping of images if needed */
+    padding-left: 20px;
+}
+
+.prog-skills img, .app-img img {
+    width: 100px; /* Adjust the width to the desired size */
+    height: 100px; /* Maintain the aspect ratio */
+    border-radius: 20px;
+    margin: 10px; /* Optional: add margin to prevent touching the edges */
+   
+}
+
+/*certificate*/
+.certificate h1{
+    padding-left:5% ;
+    margin-top: 3%;
+    padding-bottom: 20px;
+}
+.inside-c1{
+    padding-left: 15%;
+}
+.inside-c1 li{
+    padding: 3px;
+    
+}
+.inside-c1 a{
+    color: rgb(8, 8, 9);
+}
+/*project*/
+.project h1{
+    padding-left:5% ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 2%;
+}
+.pro-content {
+    padding-left: 15%;
+    
+}
+.pro-content a{
+    color:rgb(8, 8, 9);
+    
+}
+
+.contact{
+    margin-top: 30px;
+    width: 100%;
+    height: 140px;
+    background-color: gray;
+}
+.contact h1{
+    padding-top: 10px;
+    padding-left: 4%;
+    color: rgb(214, 211, 211);
+}
+.contact-wrap{
+    padding-left: 4%;
+    text-decoration: none;
+    color: rgb(211, 209, 209);
+}
+.contact-wrap a{
+    color: white;
+}
+
+
+
+@media screen and (max-width:600px) {
+    body{
+        background-image: url(bc\ -\ phone.jpg);
+        background-repeat: repeat;
+        background-size: cover;
+        font-family: "Poppins", system-ui;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header {
+        display: grid;
+        grid-template-columns: 1fr; /* Single column for mobile */
+        grid-template-rows: auto auto; /* Image and text stack vertically */
+        gap: 20px; /* Space between grid items */
+        align-items: center;
+        justify-items: center;
+    }
+
+    .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; /* Make sure the div takes full width */
+    }
+
+    .img {
+        width: 150px; /* Adjust the width to fit mobile screen */
+        height: 200px; /* Maintain the aspect ratio */
+        border-radius: 100px;
+    }
+
+    .objective {
+        width: 100%;
+        text-align: center;
+    }
+
+    .name {
+        margin-top: 0;
+        font-size: 1.5em; /* Adjust the font size for mobile */
+    }
+
+    .obj {
+        padding-left: 10%;
+        padding-right: 10%;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.9em; /* Adjusted for readability on mobile */
+    }
+    .name span{
+    color: rgb(94, 93, 93);
+}
+    .objective h2 {
+        font-size: 1.2em; /* Adjusted font size */
+    }
+
+    /*about*/
+    .aboutin{
+        font-size: .6em;
+        padding-right: 5%;
+        justify-content: flex-end;
+    }
+
+    /*education*/
+    .edu-top{
+        padding-top: 10px;
+    }
+    .edu-container {
+        padding: 0px;
+        margin:0px;
+        display: flex;
+        flex-direction: column ;
+        justify-items: center;
+        gap: 30px; /* Adds space between each edu block */
+        padding: 20px;
+        margin-left:20%;
+    }
+    .edu{
+        font-size: .6em;
+        width: 60%;
+        display: flex;
+        height: 120px;
+    }
+
+    /*skills*/
+    .skills h1,h3{
+        padding-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        
+    }
+    
+    .prog-skills{
+        display: flex;
+        gap: 20px;
+        justify-content: left; /* Centers the images horizontally */
+         /* Allows wrapping of images if needed */
+        padding-left: 40px;
+        flex-wrap: wrap;
+    }
+    .prog-skills img, .app-img img {
+        width: 60px; /* Adjust the width to the desired size */
+        height: 60px; /* Maintain the aspect ratio */
+        border-radius: 20px;
+        margin: 10px;
+        padding-bottom: 20px;
+        
+    }
+    
+    .app{
+        display: flex;
+        gap: 20px;
+        justify-content: left; /* Centers the images horizontally */
+         /* Allows wrapping of images if needed */
+        padding-left: 20px;
+        flex-wrap: wrap;
+    }
+    /*certificate*/
+    .certificate h1{
+        padding-left:10% ;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .inside-c1{
+        padding-left: 20%;
+        font-size:.6em ;
+    }
+    /*project*/
+    .project h1{
+        padding-left:10% ;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .pro-content {
+      
+        padding-left: 20%;
+        font-size:.6em ;
+        padding-right:20%;
+    }
+    /*contact*/
+    .contact h1{
+        padding-left:10% ;
+    }
+    .contact-wrap{
+        padding-left: 10%;    
+        font-size: .6em;
+    }
+}
